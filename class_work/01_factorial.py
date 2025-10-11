@@ -1,7 +1,4 @@
 # Q. Calculating the factorial of the a number 
-
-
-
 def fact(num) : 
     factorial = 1 
     for i in range(2,num+1) : 
