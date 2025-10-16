@@ -1,4 +1,3 @@
-# for taking the multilines of input 
 flag = 1 
 final_string = ""
 while(flag) : 
@@ -6,7 +5,7 @@ while(flag) :
     flag = int(input(("If you want to enter new line press 1 else press 0 : "))) 
     final_string = final_string + str + "\n" 
 
-# now we are going to calculate each of them 
+
 final_string = final_string.lower() 
 vowels = 0 
 consonants = 0
@@ -15,7 +14,6 @@ special_chars = 0
 lines = 0 
 for i in final_string : 
     if (i>="a" and i<="z") : 
-        # it means it is alphabet 
         if(i=='a' or i=="e" or i=="i"or i=="o" or i=="u") : 
             vowels += 1 
         else : 
@@ -24,8 +22,9 @@ for i in final_string :
           digits += 1 
     elif(i == "\n") : 
          lines += 1 
-    else : 
-        special_chars += 1 
+    elif i != " ":
+     special_chars += 1
+
    
 print(f"Vowels : {vowels}")
 print(f"Consonants : {consonants}")

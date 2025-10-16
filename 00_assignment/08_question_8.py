@@ -1,5 +1,3 @@
-# Q: Write the program to check string contains onlu unique character is present or not 
-
 str = input("Enter the string: ")
 setof_characters = set()
 

@@ -1,6 +1,8 @@
-# Q: Write the program to find the longest word in the sentence : 
+arr = [1,2,3,4,5,6,7,2,3,4,1]
+unique_set = set() 
 
-str = input("Enter the string : ") 
+for i in arr :
+    unique_set.add(i)
 
-start = 0 
-end = 0 
+unique_arr = list(unique_set) 
+print(unique_arr)

@@ -1,4 +1,3 @@
-# Q: Consecutive element switching : 
 arr = [1,2,3,4,5,6,7,8,9,10]
 i = 0 
 j = 1 
@@ -15,4 +14,4 @@ while(1) :
             arr[i] = temp 
             break 
 
-print(arr)
+print("The new array is :",arr)
