@@ -7,9 +7,12 @@ longest = ""
 
 for i in range(0,len(str)): 
     if str[i] == " " or i==len(str)-1  : 
-        if i == len(str)-1 : end = len(str)
-        else : end = i
+        if i == len(str)-1 : 
+            end = len(str)
+        else :
+             end = i
         word = str[start:end] 
+
         if len(longest)<len(word) : 
             longest = word
         start = end + 1 

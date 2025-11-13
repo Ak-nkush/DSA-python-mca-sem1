@@ -10,7 +10,7 @@ class LinkedList :
     
     def append(self,new_node) : 
         temp = self.head 
-        # instead creating the newnode within it is passed as a parameter 
+        #instead creating the newnode within it is passed as a parameter 
 
         if temp :  # if list is not empty 
             while temp.next : 

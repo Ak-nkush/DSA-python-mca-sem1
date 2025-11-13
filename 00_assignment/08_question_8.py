@@ -3,6 +3,7 @@ setof_characters = set()
 
 for i in str : 
     setof_characters.add(i) 
+    
 
 if len(setof_characters) == len(str) : 
     print("string is unique")

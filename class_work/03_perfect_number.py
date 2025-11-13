@@ -1,6 +1,6 @@
 # Q. Check whether the number is perfect number or not 
-#  a perfect number = sum of a divisor a number 
-# series of a perfect number = 6,28,496,8128 
+#  a perfect number = sum of a divisors a number 
+# series of a perfect number = 6,28496,8128 
 
 def perfectNumber(num) : 
     ans = 0 

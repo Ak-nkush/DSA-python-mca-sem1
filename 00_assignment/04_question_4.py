@@ -12,6 +12,7 @@ while(1):
         break 
 
 print("The position of the Substring in a given String are ",end="")   
+print(subString_position) 
 for i in subString_position : 
     print(i,end=" ")
 
