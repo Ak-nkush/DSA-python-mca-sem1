@@ -125,6 +125,26 @@ class LinkedList :
             temp.data = arr[i]
             i += 1
             temp = temp.next
+    
+    #second largest element 
+    def second_largest(self) : 
+        first = -1 
+        second = -1 
+
+        temp = self.head 
+        while temp : 
+            current = temp.data 
+            if current > first : 
+                second = first 
+                first = current 
+            elif first > current > second : 
+                second = current 
+         temp = temp.next 
+     return second 
+
+
+            
+
 
 
 
@@ -176,6 +196,8 @@ l1.print()
 l1.reverse_linkedList()
 print("After reversing the list:")
 l1.print()
+
+print(l1.second_largest()) 
 
         
 
