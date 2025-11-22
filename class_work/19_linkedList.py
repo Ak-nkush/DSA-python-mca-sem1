@@ -19,7 +19,8 @@ class LinkedList :
         else : 
             # if list is empty the node becomes the first node 
             self.head = new_node 
-        
+
+    # printing of then nodes function 
     def print_nodes(self) : 
         temp = self.head 
         while temp : 
