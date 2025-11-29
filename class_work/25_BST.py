@@ -42,24 +42,55 @@ class BST :
         print(current.data, end=" ")
         current = current.right
         
-    def preorder(self,current=None): 
-        current = self.root 
-        if current is None  :        
-            return 
-        print(current.data)
-        self.preorder(current.left)
-        self.preorder(current.right)
-        
-        # postorder 
+    def preorder_iterative(self):
+      if self.root is None:
+        return
 
+      stack = [self.root]
+
+      while stack:
+         node = stack.pop()
+         print(node.data, end=" ")
+
+         if node.right:
+            stack.append(node.right)
+         if node.left:
+            stack.append(node.left)
+            
+    def postorder_iterative(self):
+     if self.root is None:
+        return
+
+     stack1 = [self.root]
+     stack2 = []
+
+     while stack1:
+        node = stack1.pop()
+        stack2.append(node)
+
+        if node.left:
+            stack1.append(node.left)
+        if node.right:
+            stack1.append(node.right)
+
+     while stack2:
+        print(stack2.pop().data, end=" ")
+ 
 
 
 bst = BST()
-for x in [50,30,70] : 
+for x in [50, 30, 70]:
     bst.insert(x)
-print("Inorder : ", end=" ") 
-bst.inorder() 
-bst.preorder()
+
+print("Inorder: ", end="")
+bst.inorder()
+
+print("\nPreorder (iterative): ", end="")
+bst.preorder_iterative()
+
+print("\nPostorder (iterative): ", end="")
+bst.postorder_iterative()
+
 
 
 
